@@ -37,10 +37,6 @@ Use SSH to connect to your EC2 instance.
 ssh -i [PRIVATE-KEY] ec2-user@<PUBLIC-IP>
 ```
 
-## Screenshot
-
-![Step 1](1.png)
-
 ---
 
 # 📂 Step 2: Create Shell Script File
@@ -53,7 +49,6 @@ sudo nano auto.sh
 
 ## Screenshot
 
-![Step 2](2.png)
 <img width="543" height="108" alt="1" src="https://github.com/user-attachments/assets/10ed5fd1-895e-421f-bd81-123d9d5e94d4" />
 
 
@@ -84,7 +79,6 @@ echo "<?php phpinfo();?>" | sudo tee index.php
 
 ## Screenshot
 
-![Step 3](3.png)
 
 <img width="921" height="210" alt="2" src="https://github.com/user-attachments/assets/dbf18619-8e0c-4ffc-9770-1b0ddb159fd7" />
 
@@ -101,7 +95,6 @@ sudo chmod +x auto.sh
 
 ## Screenshot
 
-![Step 4](4.png)
 <img width="508" height="52" alt="3" src="https://github.com/user-attachments/assets/0b4ee52d-f4a0-44a1-a829-1a2de6d5dcae" />
 
 
@@ -117,7 +110,6 @@ Execute the automation script.
 
 ## Screenshot
 
-![Step 5](5.png)
 <img width="418" height="26" alt="4" src="https://github.com/user-attachments/assets/b2b3b11d-c872-4eee-acae-f1cab9635f4b" />
 
 
@@ -133,7 +125,6 @@ sudo service nginx status
 
 ## Screenshot
 
-![Step 6](6.png)
 <img width="1178" height="444" alt="6" src="https://github.com/user-attachments/assets/62568a5e-dbc7-4727-ab92-aad6a776589c" />
 
 ---
@@ -148,7 +139,6 @@ sudo service php-fpm status
 
 ## Screenshot
 
-![Step 7](7.png)
 <img width="1104" height="387" alt="7" src="https://github.com/user-attachments/assets/5fd69510-cf65-4222-a7da-82eeaa97c2ee" />
 
 
@@ -164,7 +154,6 @@ sudo service mariadb status
 
 ## Screenshot
 
-![Step 8](8.png)
 <img width="1366" height="535" alt="8" src="https://github.com/user-attachments/assets/d3e11874-a74c-402e-9b82-6d8ff4f5d071" />
 
 ---
@@ -179,7 +168,6 @@ sudo nano /etc/nginx/nginx.conf
 
 ## Screenshot
 
-![Step 9](9.png)
 <img width="616" height="35" alt="9" src="https://github.com/user-attachments/assets/585e0590-9245-4e5d-8104-23ebcff88b9d" />
 
 ---
@@ -194,7 +182,6 @@ index index.html index.php;
 
 ## Screenshot
 
-![Step 10](10.png)
 <img width="614" height="352" alt="10" src="https://github.com/user-attachments/assets/e9339f95-6e58-44c4-8544-d50174a797ae" />
 
 ---
@@ -210,7 +197,6 @@ sudo service php-fpm restart
 
 ## Screenshot
 
-![Step 11](11.png)
 <img width="585" height="80" alt="11" src="https://github.com/user-attachments/assets/666c49ad-9c31-4d29-add3-89f1c4b721ed" />
 
 ---
@@ -221,7 +207,6 @@ Copy the Public IPv4 address from your EC2 dashboard.
 
 ## Screenshot
 
-![Step 12](12.png)
 <img width="1489" height="745" alt="12" src="https://github.com/user-attachments/assets/e4d9cdcc-1120-471e-a966-4ff22b9d5b21" />
 
 ---
@@ -244,7 +229,6 @@ Paste the code from the Repository index.html into Nginx index.html
 
 ## Screenshot
 
-![Step 13](13.png)
 <img width="779" height="62" alt="13" src="https://github.com/user-attachments/assets/ae0a857b-b5b3-4de5-81d7-53fb6b345c43" />
 
 ---
@@ -261,7 +245,6 @@ Your Nginx webpage should display successfully.
 
 ## Screenshot
 
-![Final Output](15.png)
 <img width="1723" height="947" alt="15" src="https://github.com/user-attachments/assets/cf4350e8-c4de-402e-88bb-9fdb297e13e4" />
 
 ---
