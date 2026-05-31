@@ -1,10 +1,10 @@
-# 🚀 Setup Webpage using Nginx on AWS EC2
+# Setup Webpage using Nginx on AWS EC2
 
 This project demonstrates how to set up an Nginx web server on an AWS EC2 instance and host a custom webpage using HTML and PHP.
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 In this project, we:
 
@@ -18,7 +18,7 @@ In this project, we:
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 - AWS EC2
 - Amazon Linux 2023
@@ -29,7 +29,7 @@ In this project, we:
 
 ---
 
-# 📂 Step 1: Connect to EC2 Instance
+# Step 1: Connect to EC2 Instance
 
 Use SSH to connect to your EC2 instance.
 
@@ -39,7 +39,7 @@ ssh -i [PRIVATE-KEY] ec2-user@<PUBLIC-IP>
 
 ---
 
-# 📂 Step 2: Create Shell Script File
+# Step 2: Create Shell Script File
 
 Create a shell script file named `auto.sh`.
 
@@ -100,7 +100,7 @@ sudo chmod +x auto.sh
 
 ---
 
-# 📂 Step 5: Run the Script
+# Step 5: Run the Script
 
 Execute the automation script.
 
@@ -115,7 +115,7 @@ Execute the automation script.
 
 ---
 
-# 📂 Step 6: Verify Nginx Service
+# Step 6: Verify Nginx Service
 
 Check whether Nginx is running properly.
 
@@ -129,7 +129,7 @@ sudo service nginx status
 
 ---
 
-# 📂 Step 7: Verify PHP-FPM Service
+# Step 7: Verify PHP-FPM Service
 
 Check PHP service status.
 
@@ -144,7 +144,7 @@ sudo service php-fpm status
 
 ---
 
-# 📂 Step 8: Verify MariaDB Service
+# Step 8: Verify MariaDB Service
 
 Check MariaDB status.
 
@@ -158,7 +158,7 @@ sudo service mariadb status
 
 ---
 
-# 📂 Step 9: Configure Nginx
+# Step 9: Configure Nginx
 
 Open the Nginx configuration file.
 
@@ -172,7 +172,7 @@ sudo nano /etc/nginx/nginx.conf
 
 ---
 
-# 📂 Step 10: Add PHP Index File
+# Step 10: Add PHP Index File
 
 Inside the server block, update the index configuration.
 
@@ -186,7 +186,7 @@ index index.html index.php;
 
 ---
 
-# 📂 Step 11: Restart Services
+# Step 11: Restart Services
 
 Restart Nginx and PHP-FPM services.
 
@@ -201,7 +201,7 @@ sudo service php-fpm restart
 
 ---
 
-# 📂 Step 12: Check AWS EC2 Public IP
+# Step 12: Check AWS EC2 Public IP
 
 Copy the Public IPv4 address from your EC2 dashboard.
 
@@ -211,7 +211,7 @@ Copy the Public IPv4 address from your EC2 dashboard.
 
 ---
 
-# 📂 Step 13: Add Custom HTML file
+# Step 13: Add Custom HTML file
 
 Navigate to the Nginx HTML directory and Paste given Html code into index.html.
 
@@ -233,7 +233,7 @@ Paste the code from the Repository index.html into Nginx index.html
 
 ---
 
-# 📂 Step 14: Access the Webpage
+# Step 14: Access the Webpage
 
 Open your browser and enter the EC2 public IP address.
 
@@ -249,24 +249,10 @@ Your Nginx webpage should display successfully.
 
 ---
 
-# ✅ Output
+# - Output
 
 - Nginx server installed successfully
 - PHP configured successfully
 - MariaDB service running
 - Custom webpage hosted on EC2 instance
 
----
-
-# 📌 Author
-
-## Dhairyashil Suryawanshi
-
-- AWS & Cloud Enthusiast
-- Learning DevOps and Linux Administration
-
----
-
-# ⭐ GitHub Repository
-
-If you found this project useful, give it a ⭐ on GitHub.
